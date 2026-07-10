@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>崑山科技大學亂數產生器</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>崑山科技大學亂數產生器</h1>
+        
+        <div class="input-section">
+            <div class="input-group">
+                <label for="min-value">最小值:</label>
+                <input type="number" id="min-value" placeholder="輸入最小值" value="1">
+            </div>
+            
+            <div class="input-group">
+                <label for="max-value">最大值:</label>
+                <input type="number" id="max-value" placeholder="輸入最大值" value="100">
+            </div>
+        </div>
+        
+        <button id="generate-btn" class="generate-btn">產生亂數</button>
+        
+        <div class="result-section" id="result-section" style="display: none;">
+            <p class="result-label">產生的亂數:</p>
+            <p class="result-value" id="result-value">-</p>
+        </div>
+        
+        <div class="info-section">
+            <p>說明: 請輸入上下限範圍，點擊「產生亂數」按鈕即可獲得整數隨機數。</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
